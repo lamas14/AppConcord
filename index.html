@@ -1,60 +1,55 @@
 <!DOCTYPE html> 
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Concord App</title>
-<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
-<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
-<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
-
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Concord App</title>
+	<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+	<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+	<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="contentflow.css" />
+    <script language="JavaScript" type="text/javascript" src="contentflow.js"></script>
 </head> 
-<body> 
 
+
+<body> 
+<!--Page starts here-->
 <div data-role="page" id="page">
-	<div data-role="header">
-		<h1>Concord App</h1>
+	
+    <!--Header starts here-->
+	<div data-role="header" data-theme="a">
+		<h1>Concord University</h1>
 	</div>
-	<div data-role="content">	
-    <p>Choose your desired page</p>
-    <div class="ui-grid-a">
+    <!--Header ends here-->
     
-      <div class="ui-block-a" style="height:120px">
-      	<a href="events.html">
-        	<img src="Thumbnails/events.png">
-        	<br>Events
-        </a>
-      </div>
-      
-      <div class="ui-block-b" style="height:120px">
-      	<a href="dining.html">
-        	<img src="Thumbnails/dining.png">
-        	<br>Dining Menu
-        </a>
-      </div>
-      
-      <div class="ui-block-a" style="height:120px">
-      	<a href="map.html">
-        	<img src="Thumbnails/map.png">
-      		<br>Map
-      	</a>
-      </div>
-      
-      <div class="ui-block-b" style="height:120px">
-      	<a href="courses.html">
-      		<img src="Thumbnails/courses.png">
-            <br>Courses Offered
-      	</a>
-      </div>
-      
-    </div>
+    <!--The Content starts here-->
+	<div data-role="content" style="background-color:#000">	
+ 
+ 		<!--ContentFlow(slideshow) starts here-->
+    	<div class="ContentFlow">
+            <div class="loadIndicator"><div class="indicator"></div></div>
+            <div class="flow">
+            	<a class="item" href="courses.html"><img class="content" src="img/courses.png" title="Courses"/></a>
+                <a class="item" href="events.html"><img class="content" src="img/events.png" title="Events"/></a>
+                <a class="item" href="dining.html"><img class="content" src="img/dining.png" title="Dining Menu"/></a>
+                <a class="item" href="map.html"><img class="content" src="img/map.png" title="Campus Map"/></a>
+                <!-- We can add more items here. -->
+            </div>
+            <div class="globalCaption"></div>
+            <div class="scrollbar"><div class="slider"><div class="position"></div></div></div>
+        </div>
+        <!--ContentFlow ends here-->
 				
 	</div>
-	<div data-role="footer">
+    <!--Content ends here-->
+    
+    <!--Footer starts here-->
+	<div data-role="footer" data-theme="a">
 		<h4>Page Footer</h4>
 	</div>
+    <!--Footer ends here-->
 </div>
+<!--Page ends here-->
 
 </body>
 </html>
