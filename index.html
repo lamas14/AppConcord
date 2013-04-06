@@ -2,13 +2,14 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 	<title>Concord App</title>
 	<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
 	<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
 	<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="contentflow.css" />
     <script language="JavaScript" type="text/javascript" src="contentflow.js"></script>
+	
 </head> 
 
 
@@ -23,20 +24,21 @@
     <!--Header ends here-->
     
     <!--The Content starts here-->
-	<div data-role="content" style="background-color:#000">	
+	<div data-role="content" style="background-color:#2F0000">	
  
  		<!--ContentFlow(slideshow) starts here-->
     	<div class="ContentFlow">
             <div class="loadIndicator"><div class="indicator"></div></div>
             <div class="flow">
-            	<a class="item" href="courses.html"><img class="content" src="img/courses.png" title="Courses"/></a>
-                <a class="item" href="events.html"><img class="content" src="img/events.png" title="Events"/></a>
-                <a class="item" href="dining.html"><img class="content" src="img/dining.png" title="Dining Menu"/></a>
-                <a class="item" href="map.html"><img class="content" src="img/map.png" title="Campus Map"/></a>
+            	<a class="item" href="courses.html" rel="external"><img class="content" src="img/courses.png" title="Courses"/></a>
+                <a class="item" href="events.html" rel="external"><img class="content" src="img/events.png" title="Events"/></a>
+                <a class="item" href="dining.html" rel="external"><img class="content" src="img/dining.png" title="Dining Menu"/></a>
+                <a class="item" href="map.html" rel="external"><img class="content" src="img/map.png" title="Campus Map"/></a>
+                <a class="item" href="progression.html" rel="external"><img class="content" src="img/progressionSheets.png" title="Progression Sheets"/></a>
                 <!-- We can add more items here. -->
             </div>
             <div class="globalCaption"></div>
-            <div class="scrollbar"><div class="slider"><div class="position"></div></div></div>
+            <div class="slider"><div class="position"></div></div>
         </div>
         <!--ContentFlow ends here-->
 				

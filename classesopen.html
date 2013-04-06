@@ -13,12 +13,17 @@
 <body> 
 
 <div data-role="page" id="page6">
-	<div data-role="header"><a href="index.html" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Home</a>
+	<div data-role="header"><a href="courses.html" rel="external" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Back</a>
 		<h1>Classes still open</h1>
 	</div>
     
 	<div data-role="content">	
-		
+		<script>
+			$(document).bind("mobileinit", function() {
+			$.support.touchOverflow = true;
+			$.mobile.touchOverflowEnabled = true;
+			});
+		</script>
 
                   <table WIDTH='100%' cell?pacing='0' bordercolor="#731b1a" border="2">
                       <tr>
